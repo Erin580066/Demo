@@ -6,11 +6,40 @@
 	</head>
 	<body>
 		<script>
-			var str = '{"name":"lily","age":26}';
-			var obj = JSON.parse(str);
+//			var str = '{"name":"lily","age":26}';
+//			var obj = JSON.parse(str);
+//			console.log(obj);
+//			var json = JSON.stringify(obj);
+//			console.log(json);
+//			var str1 = "console.log('Hello')";
+//			eval(str1);
+//			var obj1 = eval("("+str+")");
+//			console.log(obj1);
+//			var str = '{"name":"erin","age":30}';
+//			var obj = JSON.parse(str,fun);
+//			function fun(name,value){
+//				console.log(name+":"+value);
+//				return value;
+//			}
+//			console.log(obj);
+//			var obj = {
+//				"name":"lisi",
+//				age:26,
+//				a:[function(){}],
+//				f:function(){}
+//			}
+//			console.log(obj);
+//			var jsonstr = JSON.stringify(obj);
+//			console.log(jsonstr);
+			var obj = {
+				a:1,
+				b:2,
+				c:3,
+				d:4
+			}
 			console.log(obj);
-			var json = JSON.stringify(obj);
-			console.log(json);
+			var jsonstr = JSON.stringify(obj,['a','b','c'],'\t');
+			console.log(jsonstr);
 		</script>
 	</body>
 </html>
